@@ -1,0 +1,6 @@
+{
+  "requiredSdkVersion": "~0.0.95",
+  "name": "FlowlyPlugin",
+  "javascriptEntrypointUrl": "http://localhost:4701/3.0/FlowlyWebIntegration.js?workspace=local-dev",
+  "localesBaseUrl": "http://localhost:4701/3.0/"
+}

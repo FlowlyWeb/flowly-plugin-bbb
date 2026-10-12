@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-tsc
+dist-3.0
+dist-3.1
+coverage
+certs
+.env
+.git
+*.log

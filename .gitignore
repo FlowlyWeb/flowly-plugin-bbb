@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-3.0/
+dist-3.1/
+dist-tsc/
+coverage/
+certs/
+.env
+*.log

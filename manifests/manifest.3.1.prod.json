@@ -1,0 +1,6 @@
+{
+  "requiredSdkVersion": "~0.1.11",
+  "name": "FlowlyPlugin",
+  "javascriptEntrypointUrl": "__FLOWLY_PLUGIN_URL__/3.1/FlowlyWebIntegration.js?workspace=${plugin_FlowlyPlugin_workspace:}",
+  "localesBaseUrl": "__FLOWLY_PLUGIN_URL__/3.1/"
+}
