@@ -121,4 +121,7 @@ docker run -p 3003:80 \
 
 ## License
 
-**LICENSE_SECTION**
+Copyright (C) 2026 Geezot.
+
+Released under the [GNU Affero General Public License v3.0](LICENSE). If you run a modified
+version of this plugin for other people, you must make your source code available to them.
