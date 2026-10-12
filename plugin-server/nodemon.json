@@ -1,0 +1,6 @@
+{
+  "watch": ["server.js", "core", "modules"],
+  "ext": "js",
+  "ignore": ["node_modules", "tests"],
+  "nodeArgs": ["--env-file=.env"]
+}

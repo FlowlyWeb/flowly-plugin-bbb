@@ -1,0 +1,39 @@
+{
+  "name": "flowly-plugin-server",
+  "version": "2.0.2",
+  "description": "WebSocket bridge between the Flowly BigBlueButton plugin and the BBB backend",
+  "main": "server.js",
+  "author": "Geezot",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FlowlyWeb/flowly-plugin-bbb.git",
+    "directory": "plugin-server"
+  },
+  "packageManager": "pnpm@10.19.0",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build:deb": "bash scripts/build-deb.sh"
+  },
+  "dependencies": {
+    "ioredis": "^5.6.1",
+    "pg": "^8.19.0",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.4.0",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.1"
+  }
+}

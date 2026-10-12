@@ -1,0 +1,59 @@
+<h2>Échec de la mise à jour FlowlyWeb</h2>
+
+<p>
+    La mise à jour de votre système FlowlyWeb vers la version <strong>{{targetVersion}}</strong> a rencontré une erreur.
+</p>
+
+<div class="alert alert-danger">
+    <strong>Mise à jour échouée</strong><br>
+    Le système a été automatiquement restauré à la version précédente ({{currentVersion}}) pour assurer la continuité du service.
+</div>
+
+<div class="info-card">
+    <h3>Détails de l'erreur</h3>
+    <table class="data-table">
+        <tr>
+            <td><strong>Version actuelle :</strong></td>
+            <td>{{currentVersion}}</td>
+        </tr>
+        <tr>
+            <td><strong>Version cible :</strong></td>
+            <td>{{targetVersion}}</td>
+        </tr>
+        <tr>
+            <td><strong>Date de l'échec :</strong></td>
+            <td>{{formatDate failedAt}}</td>
+        </tr>
+    </table>
+</div>
+
+<h3>Message d'erreur</h3>
+
+<div style="background-color: #fee2e2; padding: 20px; border-radius: 8px; border-left: 4px solid #ef4444; margin: 20px 0;">
+    <pre style="margin: 0; white-space: pre-wrap; font-family: monospace; font-size: 13px; color: #991b1b;">{{errorMessage}}</pre>
+</div>
+
+<h3>Rollback automatique effectué</h3>
+
+<p>
+    Pour garantir la stabilité de vos services, le système a été automatiquement restauré à la version précédente.
+    Tous vos services sont à nouveau opérationnels.
+</p>
+
+<div class="info-card">
+    <h3>Que faire maintenant ?</h3>
+    <ul style="margin: 10px 0; padding-left: 20px;">
+        <li>Vérifiez les logs système pour plus de détails</li>
+        <li>Contactez le support si l'erreur persiste</li>
+    </ul>
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+    <a href="{{dashboardUrl}}" class="button">Voir les logs</a>
+    <a href="mailto:{{supportEmail}}" class="button-secondary button" style="margin-left: 10px;">Contacter le support</a>
+</div>
+
+<p style="margin-top: 30px; font-size: 14px; color: #6b7280;">
+    <strong>Référence de l'erreur :</strong> {{errorId}}<br>
+    Merci de fournir cette référence lors de votre contact avec le support.
+</p>

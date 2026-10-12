@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if mso]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <style>
+        body { margin: 0; padding: 0; background-color: #f9fafb; font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table { border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { border: 0; -ms-interpolation-mode: bicubic; }
+        p { margin: 0 0 16px 0; font-size: 16px; line-height: 1.6; color: #4b5563; font-family: sans-serif; }
+        h2 { margin: 0 0 16px 0; font-size: 22px; font-weight: 700; color: #1f2937; font-family: sans-serif; }
+        h3 { margin: 20px 0 12px 0; font-size: 18px; font-weight: 600; color: #374151; font-family: sans-serif; }
+        ul { margin: 0 0 16px 0; padding-left: 20px; font-size: 16px; line-height: 1.6; color: #4b5563; font-family: sans-serif; }
+        li { margin-bottom: 8px; }
+        a { color: #2563eb; text-decoration: none; }
+        .wrapper { width: 100%; table-layout: fixed; background-color: #f9fafb; padding-bottom: 40px; }
+        .main { background-color: #ffffff; margin: 0 auto; width: 100%; max-width: 600px; color: #1f2937; }
+        .button { background-color: #2563eb; color: #ffffff !important; padding: 14px 28px; text-decoration: none; border-radius: 8px; display: inline-block; font-weight: bold; font-size: 16px; }
+        .button-success { background-color: #10b981; color: #ffffff !important; padding: 14px 28px; text-decoration: none; border-radius: 8px; display: inline-block; font-weight: bold; font-size: 16px; }
+        .button-danger { background-color: #ef4444; color: #ffffff !important; padding: 14px 28px; text-decoration: none; border-radius: 8px; display: inline-block; font-weight: bold; font-size: 16px; }
+        .btn-wrap { text-align: center; margin: 30px 0; }
+        .info-card { background-color: #f8fafc; border-left: 4px solid #2563eb; padding: 20px; margin: 20px 0; }
+        .info-card h3 { color: #1e40af; font-size: 17px; font-weight: 600; margin: 0 0 12px 0; font-family: sans-serif; }
+        .info-card p { font-size: 15px; color: #4b5563; margin: 0; line-height: 1.8; font-family: sans-serif; }
+        .alert { padding: 16px 20px; border-radius: 8px; font-size: 15px; line-height: 1.6; margin: 20px 0; font-family: sans-serif; }
+        .alert-info { background-color: #dbeafe; color: #1e40af; border-left: 4px solid #2563eb; }
+        .alert-warning { background-color: #fef3c7; color: #92400e; border-left: 4px solid #f59e0b; }
+        .alert-danger { background-color: #fee2e2; color: #991b1b; border-left: 4px solid #ef4444; }
+        .alert-success { background-color: #d1fae5; color: #065f46; border-left: 4px solid #10b981; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .data-table th, .data-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #f3f4f6; font-size: 15px; font-family: sans-serif; }
+        .data-table th { background-color: #f9fafb; font-weight: 600; color: #374151; }
+    </style>
+</head>
+<body>
+    <center class="wrapper">
+        <table class="main" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <!-- HEADER / LOGO -->
+            <tr>
+                <td align="center" style="padding: 40px 0; text-align: center;">
+                    <a href="{{frontendUrl}}" target="_blank" style="text-decoration: none; display: inline-block;">
+                        <img src="https://flowlyweb.com/logos/flowlyweb.svg" alt="Flowlyweb" width="160" style="display: block; margin: 0 auto; width: 160px; max-width: 160px; border: 0;">
+                    </a>
+                </td>
+            </tr>
+            <!-- CONTENT -->
+            <tr>
+                <td style="padding: 0 40px 40px 40px; text-align: left;">
+                    {{#if recipientName}}
+                    <h1 style="margin: 0 0 20px 0; font-size: 24px; color: #1f2937; font-family: sans-serif;">Bonjour {{recipientName}},</h1>
+                    {{else}}
+                    <h1 style="margin: 0 0 20px 0; font-size: 24px; color: #1f2937; font-family: sans-serif;">Bonjour,</h1>
+                    {{/if}}
+
+                    {{{body}}}
+                </td>
+            </tr>
+            <!-- FOOTER -->
+            <tr>
+                <td style="padding: 30px; background-color: #f3f4f6; text-align: center; border-top: 1px solid #e5e7eb;">
+                    <p style="margin: 0; font-size: 14px; color: #6b7280; font-family: sans-serif;">&copy; {{currentYear}} Flowlyweb. Tous droits reserves.</p>
+                    <p style="margin: 10px 0 0 0; font-size: 12px; color: #6b7280; font-family: sans-serif;">
+                        Vous recevez cet email car vous etes client Flowlyweb.
+                        {{#if supportEmail}}<br>Besoin d'aide ? <a href="mailto:{{supportEmail}}" style="color: #2563eb; text-decoration: none;">{{supportEmail}}</a>{{/if}}
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

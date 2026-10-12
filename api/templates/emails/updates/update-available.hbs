@@ -1,0 +1,64 @@
+<h2>Nouvelle mise à jour FlowlyWeb disponible</h2>
+
+<p>
+    Une nouvelle version de FlowlyWeb est disponible et prête à être installée sur votre système.
+</p>
+
+<div class="info-card">
+    <h3>Informations sur la mise à jour</h3>
+    <table class="data-table">
+        <tr>
+            <td><strong>Version actuelle :</strong></td>
+            <td>{{currentVersion}}</td>
+        </tr>
+        <tr>
+            <td><strong>Nouvelle version :</strong></td>
+            <td><strong style="color: #10b981;">{{newVersion}}</strong></td>
+        </tr>
+    </table>
+</div>
+
+{{#if hasBreakingChanges}}
+<div class="alert alert-warning">
+    <strong>Changements importants</strong><br>
+    Cette mise à jour contient des modifications importantes. Veuillez consulter les notes de version avant d'installer.
+</div>
+{{else}}
+<div class="alert alert-info">
+    <strong>Mise à jour recommandée</strong><br>
+    Cette mise à jour apporte des améliorations et corrections. L'installation est recommandée.
+</div>
+{{/if}}
+
+<h3>Notes de version</h3>
+
+{{#if changelog}}
+<div style="background-color: #f9fafb; padding: 20px; border-radius: 8px; border-left: 4px solid #2563eb; margin: 20px 0;">
+    <pre style="margin: 0; white-space: pre-wrap; font-family: monospace; font-size: 14px; color: #374151;">{{changelog}}</pre>
+</div>
+{{else}}
+<p style="color: #6b7280; font-style: italic;">Aucune note de version disponible pour cette mise à jour.</p>
+{{/if}}
+
+<h3>Installation</h3>
+
+<p>
+    Vous pouvez installer cette mise à jour depuis votre tableau de bord administrateur :
+</p>
+
+<div style="text-align: center; margin: 30px 0;">
+    <a href="{{dashboardUrl}}" class="button">Installer la mise à jour</a>
+</div>
+
+<div class="info-card">
+    <h3>Conseils avant la mise à jour</h3>
+    <ul style="margin: 10px 0; padding-left: 20px;">
+        <li>Vérifiez que vous disposez d'une sauvegarde récente</li>
+        <li>Planifiez la mise à jour pendant une période de faible activité</li>
+        <li>Consultez la documentation pour plus de détails</li>
+    </ul>
+</div>
+
+<p style="margin-top: 30px; font-size: 14px; color: #6b7280;">
+    Les mises à jour sont importantes pour maintenir la sécurité et les performances de votre système FlowlyWeb.
+</p>

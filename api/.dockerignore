@@ -1,0 +1,9 @@
+node_modules
+dist
+logs
+.env
+.env.development
+.git
+.idea
+coverage
+*.log

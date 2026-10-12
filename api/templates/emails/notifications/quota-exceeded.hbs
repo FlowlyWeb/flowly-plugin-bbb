@@ -1,0 +1,27 @@
+<h2>Limite de quota atteinte</h2>
+
+<p>
+    Votre institution <strong>{{institutionName}}</strong> a atteint la limite de quota autorisée pour votre formule FlowlyWeb.
+</p>
+
+<div class="alert alert-warning">
+    <strong>Quota dépassé</strong><br>
+    Type de quota : {{quotaType}}<br>
+    Limite autorisée : {{quotaLimit}}<br>
+    Utilisation actuelle : {{currentUsage}}<br>
+    Dépassement : {{excessAmount}}
+</div>
+
+<h3>Solutions disponibles</h3>
+
+<p>
+    Pour lever ces restrictions et augmenter vos quotas, vous pouvez passer à une formule supérieure.
+</p>
+
+<div class="btn-wrap">
+    <a href="{{frontendUrl}}" class="button">Voir les formules disponibles</a>
+</div>
+
+<p style="margin-top: 30px; font-size: 14px; color: #6b7280;">
+    Si vous avez des questions, contactez notre équipe à <a href="mailto:{{supportEmail}}">{{supportEmail}}</a>.
+</p>
